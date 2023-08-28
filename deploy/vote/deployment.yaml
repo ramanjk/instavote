@@ -20,7 +20,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - image: schoolofdevops/vote:v1test
+      - image: schoolofdevops/vote:v1
         name: vote
         resources: {}
 status: {}
