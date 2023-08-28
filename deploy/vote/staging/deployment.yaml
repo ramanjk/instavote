@@ -8,7 +8,7 @@ metadata:
 spec:
   replicas: 5
   template:
-  spec:
-    containers:
-    - image: schoolofdevops/vote:v3
-      name: vote
+    spec:
+      containers:
+      - image: schoolofdevops/vote:v3
+        name: vote
