@@ -16,6 +16,6 @@ spec:
   selector:
     app: vote
     tier: frontend
-  type: NodePort
+  type: LoadBalancer
 status:
   loadBalancer: {}

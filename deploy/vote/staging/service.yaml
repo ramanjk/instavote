@@ -4,12 +4,18 @@ metadata:
   creationTimestamp: null
   labels:
     app: vote
+    tier: frontend
   name: vote
 spec:
   ports:
   - name: "80"
+    nodePort: 30000
     port: 80
-    targetPort: 80
-    nodePort: 30200
     protocol: TCP
-
+    targetPort: 80
+  selector:
+    app: vote
+    tier: frontend
+  type: LoadBalancer
+status:
+  loadBalancer: {}
